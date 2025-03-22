@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+        <h1>오늘의 운세</h1>
+        <h2>5가지 봉투중에서 하나를 골라보세요!</h2>
+        <div class="boxes" style="border: 1px solid black; display: flex; width: 1500px; height: 250px; border-collapse: collapse;">
+            <button style="flex: 1; background-color: red;"></button>
+            <button style="flex: 1; background-color: yellow;"></button>
+            <button style="flex: 1; background-color: aquamarine;"></button>
+            <button style="flex: 1; background-color: blue;"></button>
+            <button style="flex: 1; background-color: violet;"></button>
+        </div>
+        <div class="lucky" style="margin-top: 30px; border: 1px solid black; width: 900px; height: 250px; text-align: center; align-items: center; display: flex; justify-content: center;">
+
+        </div>
+
+    </div>
+
+
+    <script>
+        const fortunes = [
+            "오늘은 행운이 당신을 향해 달려옵니다!",
+            "조용히 쉬는 하루가 되길 추천드려요.",
+            "작은 선택이 큰 결과로 이어집니다.",
+            "마음의 소리에 귀 기울이세요.",
+            "뜻밖의 연락이 찾아올 수 있어요!"
+        ];
+        const buttons = document.querySelectorAll('.boxes button')
+        const luckyBox = document.querySelector('.lucky')
+
+        buttons.forEach((button,index) => {
+            button.addEventListener('click', () => {
+                luckyBox.textContent = fortunes[index]
+            })
+        })
+
+    </script>
+</body>
+</html>
