@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="tab_ui.css" />
 </head>
 <body>
     <div class="container" style="display: flex; flex-direction: column; align-items: center;">
@@ -17,29 +18,16 @@
             <button style="flex: 1; background-color: violet;"></button>
         </div>
         <div class="lucky" style="margin-top: 30px; border: 1px solid black; width: 900px; height: 250px; text-align: center; align-items: center; display: flex; justify-content: center;">
-
         </div>
-
+        <button class="refresh" style="width: 300px; height: 30px; margin-top: 30px;">다시 뽑기</button>
     </div>
 
-
-    <script>
-        const fortunes = [
-            "오늘은 행운이 당신을 향해 달려옵니다!",
-            "조용히 쉬는 하루가 되길 추천드려요.",
-            "작은 선택이 큰 결과로 이어집니다.",
-            "마음의 소리에 귀 기울이세요.",
-            "뜻밖의 연락이 찾아올 수 있어요!"
-        ];
-        const buttons = document.querySelectorAll('.boxes button')
-        const luckyBox = document.querySelector('.lucky')
-
-        buttons.forEach((button,index) => {
-            button.addEventListener('click', () => {
-                luckyBox.textContent = fortunes[index]
-            })
-        })
-
-    </script>
+    <div class="modal_overlay">
+        <div class="modal">다시 뽑아주세요!
+            <button style="margin-top: 15px; " class="modal_close">닫기</button>
+        </div>
+    </div>
+    
+    <script src="tab_ui.js"></script>
 </body>
 </html>
