@@ -1,0 +1,44 @@
+
+
+.calculator {
+    border : 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    height: 800px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    border-collapse: collapse;
+}
+
+
+.calculator div{
+    display: flex;
+    flex: 1;
+    border: 1px solid black;
+}
+
+.monitor_outer {
+    background-color: black;
+    
+}
+
+.monitor_inner {
+    background-color: green;
+    margin: 10px;
+    color: red;
+    display: flex;
+    justify-content: right;
+    font-size: 100px;
+}
+
+.calculator div button {
+    flex: 1;
+    margin: 8px;
+    color: white;
+    background-color: black;
+    font-size: 30px;
+}
