@@ -1,0 +1,134 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.to_do_item {
+    display: flex;
+}
+
+.item {
+    display: flex;
+    margin-bottom: -1px;
+    width: 600px;
+    height: 30px;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.item > div {
+    border-right: 1px solid black;
+    height: 100%;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    justify-content: center;
+}
+.item >div:last-child {
+    border-right: none;
+}
+
+.add_delete{
+    /* border: 1px solid red; */
+    width: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.plus {
+    width: 30px;
+    height: 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minus {
+    width: 30px;
+    height: 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#to_do_list {
+    display: flex;
+    width: 600px;
+    height: fit-content;
+    justify-content: center;
+    border-collapse: collapse;  
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+
+#to_do_list_header {
+    display: flex;
+    border: 1px solid black;
+    width: 600px;
+    height: 30px;
+    border-collapse: collapse;
+    
+}
+
+#to_do_list_header >div {
+    border-right: 1px solid black;
+    height: 100%;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    align-items: center;
+}
+
+#to_do_list_header >div:last-child {
+    border-right: none;
+}
+
+.check {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.about {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+
+.deadline {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.add_delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#add_delete_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
